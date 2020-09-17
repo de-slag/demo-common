@@ -9,11 +9,19 @@
 	</parent>
 	<artifactId>demo-base</artifactId>
 	<dependencies>
-
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<url>https://maven.pkg.github.com/de-slag/${project.artifactId}</url>
+			<uniqueVersion>false</uniqueVersion>
+			<id>github</id>
+			<name>de-slag github</name>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 </project>

@@ -29,14 +29,11 @@
 
 	<distributionManagement>
 		<repository>
-			<url>https://maven.pkg.github.com/de-slag</url>
+			<url>https://maven.pkg.github.com/de-slag/demo-common</url>
 			<uniqueVersion>false</uniqueVersion>
 			<id>github</id>
-			<name>Corporate Repository</name>
+			<name>de-slag github</name>
 			<layout>default</layout>
-
 		</repository>
-
-
 	</distributionManagement>
 </project>
