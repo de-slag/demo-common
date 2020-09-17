@@ -26,17 +26,17 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
-<!-- 	<distributionManagement>
+
+	<distributionManagement>
 		<repository>
 			<url>https://maven.pkg.github.com/de-slag</url>
 			<uniqueVersion>false</uniqueVersion>
-			<id>corp1</id>
+			<id>github</id>
 			<name>Corporate Repository</name>
 			<layout>default</layout>
-			
+
 		</repository>
 
 
-	</distributionManagement> -->
+	</distributionManagement>
 </project>
