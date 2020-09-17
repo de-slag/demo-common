@@ -2,6 +2,8 @@ package de.slag.demo.base;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.math.BigDecimal;
+
 import org.junit.jupiter.api.Test;
 
 class DemoNumberUtilsTest {
@@ -21,6 +23,13 @@ class DemoNumberUtilsTest {
 	@Test
 	void testIsCompleteleyDivisibleByNulls() {		
 		assertThrows(DemoException.class, () -> DemoNumberUtils.isCompleteleyDivisibleBy(4, (Integer[]) null));
+	}
+	
+	@Test
+	void testIsInteger() {
+		assertTrue(DemoNumberUtils.isInteger(BigDecimal.valueOf(5)));
+		assertFalse(DemoNumberUtils.isInteger(BigDecimal.valueOf(2.5)));
+		
 	}
 
 }
