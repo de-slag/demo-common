@@ -26,4 +26,15 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<distributionManagement>
+		<repository>
+			<url>https://maven.pkg.github.com/de-slag</url>
+			<uniqueVersion>false</uniqueVersion>
+			<id>corp1</id>
+			<name>Corporate Repository</name>
+			<layout>default</layout>
+		</repository>
+
+
+	</distributionManagement>
 </project>
