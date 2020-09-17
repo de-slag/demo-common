@@ -1,5 +1,6 @@
 package de.slag.demo.base;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -26,6 +27,16 @@ public final class DemoNumberUtils {
 		Optional.ofNullable(divident).orElseThrow(() -> new DemoException("divident is null"));
 		Optional.ofNullable(divisor).orElseThrow(() -> new DemoException("divisor is null"));
 		return divident % divisor == 0;
+	}
+
+	public static boolean isInteger(BigDecimal bigDecimal) {
+		try {
+			bigDecimal.intValueExact();
+		} catch (ArithmeticException e) {
+			// ignored
+			return false;
+		}
+		return true;
 	}
 
 }

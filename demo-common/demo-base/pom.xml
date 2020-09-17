@@ -3,10 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>de.slag</groupId>
+		<groupId>de.slag.demo</groupId>
 		<artifactId>demo-common</artifactId>
-
-		<version>0.0.3-SNAPSHOT</version>
+		<version>0.0.4</version>
 	</parent>
 	<artifactId>demo-base</artifactId>
 	<dependencies>
@@ -18,7 +17,7 @@
 	</dependencies>
 	<distributionManagement>
 		<repository>
-			<url>https://maven.pkg.github.com/de-slag/${project.artifactId}</url>
+			<url>https://maven.pkg.github.com/de-slag/demo-common</url>
 			<uniqueVersion>false</uniqueVersion>
 			<id>github</id>
 			<name>de-slag github</name>
