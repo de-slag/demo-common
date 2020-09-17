@@ -24,6 +24,6 @@ test:
 deploy:
   stage: deploy
   script:
-    - mvn $MAVEN_OPTS_DEPLOY deploy
+    - mvn  $MAVEN_CLI_OPTS $MAVEN_OPTS_DEPLOY deploy
   only:
     - master
