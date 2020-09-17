@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>de.slag.demo</groupId>
 		<artifactId>demo-common</artifactId>
-		<version>0.0.4-SNAPSHOT</version>
+		<version>0.0.5-SNAPSHOT</version>
 	</parent>
 	<artifactId>demo-base</artifactId>
 	<dependencies>
