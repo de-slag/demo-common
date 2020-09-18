@@ -20,9 +20,10 @@ test:
   script:
     - mvn $MAVEN_CLI_OPTS test
 
-#deploy:
-#  stage: deploy
-#  script:
-#    - mvn  $MAVEN_CLI_OPTS $MAVEN_OPTS_DEPLOY deploy
+deploy:
+  stage: deploy
+  script:
+     - echo "$TEST_KEY"
+#    - echo "$TESTmvn  $MAVEN_CLI_OPTS $MAVEN_OPTS_DEPLOY deploy
 #  only:
 #    - master
