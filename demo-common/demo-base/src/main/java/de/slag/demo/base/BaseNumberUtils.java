@@ -5,14 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public final class DemoNumberUtils {
+public final class BaseNumberUtils {
 
-	private DemoNumberUtils() {
+	private BaseNumberUtils() {
 
 	}
 
 	public static boolean isCompleteleyDivisibleBy(Integer divident, Integer... divisors) {
-		Optional.ofNullable(divisors).orElseThrow(() -> new DemoException("divisors is null"));
+		Optional.ofNullable(divisors).orElseThrow(() -> new BaseException("divisors is null"));
 		List<Integer> asList = Arrays.asList(divisors);
 		for (Integer divisor : asList) {
 			boolean completeleyDivisibleBy = isCompleteleyDivisibleBy(divident, divisor);
@@ -24,8 +24,8 @@ public final class DemoNumberUtils {
 	}
 
 	public static boolean isCompleteleyDivisibleBy(Integer divident, Integer divisor) {
-		Optional.ofNullable(divident).orElseThrow(() -> new DemoException("divident is null"));
-		Optional.ofNullable(divisor).orElseThrow(() -> new DemoException("divisor is null"));
+		Optional.ofNullable(divident).orElseThrow(() -> new BaseException("divident is null"));
+		Optional.ofNullable(divisor).orElseThrow(() -> new BaseException("divisor is null"));
 		return divident % divisor == 0;
 	}
 

@@ -1,10 +1,10 @@
 package de.slag.demo.base;
 
-public class DemoException extends RuntimeException {
+public class BaseException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 
-	public DemoException(String s) {
+	public BaseException(String s) {
 		super(s);
 	}
 

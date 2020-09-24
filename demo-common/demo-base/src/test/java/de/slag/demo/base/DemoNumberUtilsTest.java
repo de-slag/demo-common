@@ -10,25 +10,25 @@ class DemoNumberUtilsTest {
 
 	@Test
 	void testIsCompleteleyDivisibleBy() {
-		assertTrue(DemoNumberUtils.isCompleteleyDivisibleBy(4, 2));
-		assertFalse(DemoNumberUtils.isCompleteleyDivisibleBy(5, 2));
-		assertThrows(DemoException.class, () -> DemoNumberUtils.isCompleteleyDivisibleBy(4, (Integer) null));
-		assertThrows(DemoException.class, () -> DemoNumberUtils.isCompleteleyDivisibleBy(null, 2));
+		assertTrue(BaseNumberUtils.isCompleteleyDivisibleBy(4, 2));
+		assertFalse(BaseNumberUtils.isCompleteleyDivisibleBy(5, 2));
+		assertThrows(BaseException.class, () -> BaseNumberUtils.isCompleteleyDivisibleBy(4, (Integer) null));
+		assertThrows(BaseException.class, () -> BaseNumberUtils.isCompleteleyDivisibleBy(null, 2));
 
-		assertTrue(DemoNumberUtils.isCompleteleyDivisibleBy(4, 4, 2));
-		assertFalse(DemoNumberUtils.isCompleteleyDivisibleBy(4, 2, 3));
-		assertThrows(DemoException.class, () -> DemoNumberUtils.isCompleteleyDivisibleBy(null, 4, 2));
+		assertTrue(BaseNumberUtils.isCompleteleyDivisibleBy(4, 4, 2));
+		assertFalse(BaseNumberUtils.isCompleteleyDivisibleBy(4, 2, 3));
+		assertThrows(BaseException.class, () -> BaseNumberUtils.isCompleteleyDivisibleBy(null, 4, 2));
 	}
 	
 	@Test
 	void testIsCompleteleyDivisibleByNulls() {		
-		assertThrows(DemoException.class, () -> DemoNumberUtils.isCompleteleyDivisibleBy(4, (Integer[]) null));
+		assertThrows(BaseException.class, () -> BaseNumberUtils.isCompleteleyDivisibleBy(4, (Integer[]) null));
 	}
 	
 	@Test
 	void testIsInteger() {
-		assertTrue(DemoNumberUtils.isInteger(BigDecimal.valueOf(5)));
-		assertFalse(DemoNumberUtils.isInteger(BigDecimal.valueOf(2.5)));
+		assertTrue(BaseNumberUtils.isInteger(BigDecimal.valueOf(5)));
+		assertFalse(BaseNumberUtils.isInteger(BigDecimal.valueOf(2.5)));
 		
 	}
 
