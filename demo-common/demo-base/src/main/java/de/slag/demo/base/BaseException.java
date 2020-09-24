@@ -7,5 +7,9 @@ public class BaseException extends RuntimeException {
 	public BaseException(String s) {
 		super(s);
 	}
+	
+	public BaseException(Throwable t) {
+		super(t);
+	}
 
 }
